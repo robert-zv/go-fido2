@@ -45,7 +45,7 @@ type AuthenticatorGetInfoResponse struct {
 	AttestationFormats               []string                                 `cbor:"22,keyasint"`
 	UvCountSinceLastPinEntry         uint                                     `cbor:"23,keyasint"`
 	LongTouchForReset                bool                                     `cbor:"24,keyasint"`
-	EncIdentifier                    string                                   `cbor:"25,keyasint"`
+	EncIdentifier                    []byte                                   `cbor:"25,keyasint"`
 	TransportsForReset               []string                                 `cbor:"26,keyasint"`
 	PinComplexityPolicy              bool                                     `cbor:"27,keyasint"`
 	PinComplexityPolicyURL           string                                   `cbor:"28,keyasint"`
